@@ -6,6 +6,52 @@
   font-family: Roboto;
 }
 
+.employees-container {
+  height: 90vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.employees-container .employees {
+  height: 90%;
+  width: 90%;
+  background-color: white;
+}
+
+.employees-container .employees .employees__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.employees-container .employees .employees__head a {
+  text-decoration: none;
+  background-color: #ffa31a;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.employees-container .employees .employees__table {
+  width: 100%;
+  text-align: center;
+}
+
 header {
   background-color: #292929;
   height: 10vh;
