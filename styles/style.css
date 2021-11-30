@@ -6,8 +6,9 @@
   font-family: Roboto;
 }
 
-.login-viewer {
-  height: 100vh;
+.add-employee-view {
+  height: 90vh;
+  background-color: #808080;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,10 +18,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #808080;
 }
 
-.login-viewer .login {
+.add-employee-view .add-employee {
   background-color: #1b1b1b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,19 +39,19 @@
   border-radius: 10px;
 }
 
-.login-viewer .login .login__logo {
+.add-employee-view .add-employee h1 {
   color: #ffffff;
   font-size: 21px;
 }
 
-.login-viewer .login .login__logo span {
+.add-employee-view .add-employee h1 span {
   background-color: #ffa31a;
   color: #1b1b1b;
   border-radius: 10px;
   padding: 5px;
 }
 
-.login-viewer .login .login__form {
+.add-employee-view .add-employee .add-employee__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +65,7 @@
   width: 100%;
 }
 
-.login-viewer .login .login__form .login__input {
+.add-employee-view .add-employee .add-employee__form .add-employee__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,19 +77,19 @@
   width: 100%;
 }
 
-.login-viewer .login .login__form .login__input label {
+.add-employee-view .add-employee .add-employee__form .add-employee__input label {
   color: white;
   margin: 0 0 10px 0;
 }
 
-.login-viewer .login .login__form .login__input input {
+.add-employee-view .add-employee .add-employee__form .add-employee__input input {
   padding: 10px;
   border: none;
   outline: none;
   border-radius: 10px;
 }
 
-.login-viewer .login .login__form button {
+.add-employee-view .add-employee .add-employee__form button {
   margin: 10px 0;
   padding: 10px 0;
   width: 50%;
@@ -98,5 +98,185 @@
   outline: none;
   font-size: 21px;
   border-radius: 20px;
+}
+
+.login-view {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #808080;
+}
+
+.login-view .login {
+  background-color: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login-view .login .login__logo {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.login-view .login .login__logo span {
+  background-color: #ffa31a;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.login-view .login .login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.login-view .login .login__form .login__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.login-view .login .login__form .login__input label {
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.login-view .login .login__form .login__input input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.login-view .login .login__form button {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 50%;
+  background-color: #ffa31a;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  border-radius: 20px;
+}
+
+.employees-view {
+  height: 90vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.employees-view .employees {
+  height: 90%;
+  width: 90%;
+  background-color: white;
+}
+
+.employees-view .employees .employees__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.employees-view .employees .employees__head a {
+  text-decoration: none;
+  background-color: #ffa31a;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.employees-view .employees .employees__table {
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  background-color: #292929;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5%;
+}
+
+header .logo h1 {
+  color: #ffffff;
+}
+
+header .logo h1 span {
+  background-color: #ffa31a;
+  border-radius: 10px;
+  color: #1b1b1b;
+  padding: 5px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */
