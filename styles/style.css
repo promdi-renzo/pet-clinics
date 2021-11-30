@@ -1,0 +1,102 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.login-viewer {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #808080;
+}
+
+.login-viewer .login {
+  background-color: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login-viewer .login .login__logo {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.login-viewer .login .login__logo span {
+  background-color: #ffa31a;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.login-viewer .login .login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.login-viewer .login .login__form .login__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.login-viewer .login .login__form .login__input label {
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.login-viewer .login .login__form .login__input input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.login-viewer .login .login__form button {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 50%;
+  background-color: #ffa31a;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */
