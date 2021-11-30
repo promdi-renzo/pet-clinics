@@ -4,11 +4,11 @@
     </div>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Pets</li>
-            <li>Employees</li>
-            <li>Services</li>
-            <li>Transactions</li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="pets.php">Pets</a></li>
+            <li><a href="employees.php">Employees</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="transactions.php">Transactions</a></li>
         </ul>
     </nav>
 </header>
