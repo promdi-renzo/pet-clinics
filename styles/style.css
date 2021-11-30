@@ -6,7 +6,7 @@
   font-family: Roboto;
 }
 
-.employees-view {
+.add-employee-view {
   height: 90vh;
   background-color: #808080;
   display: -webkit-box;
@@ -20,72 +20,84 @@
           align-items: center;
 }
 
-.employees-view .employees {
-  height: 90%;
-  width: 90%;
-  background-color: white;
-}
-
-.employees-view .employees .employees__head {
+.add-employee-view .add-employee {
+  background-color: #1b1b1b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2%;
-}
-
-.employees-view .employees .employees__head a {
-  text-decoration: none;
-  background-color: #ffa31a;
-  padding: 10px;
+  width: 50%;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 20px;
   border-radius: 10px;
+}
+
+.add-employee-view .add-employee h1 {
   color: #ffffff;
+  font-size: 21px;
 }
 
-.employees-view .employees .employees__table {
-  width: 100%;
-  text-align: center;
-}
-
-header {
-  background-color: #292929;
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 5%;
-}
-
-header .logo h1 {
-  color: #ffffff;
-}
-
-header .logo h1 span {
+.add-employee-view .add-employee h1 span {
   background-color: #ffa31a;
-  border-radius: 10px;
   color: #1b1b1b;
+  border-radius: 10px;
   padding: 5px;
 }
 
-header nav ul {
-  list-style: none;
+.add-employee-view .add-employee .add-employee__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
-header nav ul li {
-  display: inline-block;
+.add-employee-view .add-employee .add-employee__form .add-employee__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.add-employee-view .add-employee .add-employee__form .add-employee__input label {
   color: white;
-  margin: 0 10px;
+  margin: 0 0 10px 0;
+}
+
+.add-employee-view .add-employee .add-employee__form .add-employee__input input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.add-employee-view .add-employee .add-employee__form button {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 50%;
+  background-color: #ffa31a;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  border-radius: 20px;
 }
 
 .login-view {
@@ -180,5 +192,87 @@ header nav ul li {
   outline: none;
   font-size: 21px;
   border-radius: 20px;
+}
+
+.employees-view {
+  height: 90vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.employees-view .employees {
+  height: 90%;
+  width: 90%;
+  background-color: white;
+}
+
+.employees-view .employees .employees__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.employees-view .employees .employees__head a {
+  text-decoration: none;
+  background-color: #ffa31a;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.employees-view .employees .employees__table {
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  background-color: #292929;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5%;
+}
+
+header .logo h1 {
+  color: #ffffff;
+}
+
+header .logo h1 span {
+  background-color: #ffa31a;
+  border-radius: 10px;
+  color: #1b1b1b;
+  padding: 5px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  color: white;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,69 +11,62 @@ $white: #ffffff;
   font-family: Roboto;
 }
 
-.employees-view {
+.add-employee-view {
   height: 90vh;
   background-color: $black-2;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .employees {
-    height: 90%;
-    width: 90%;
-    background-color: white;
-
-    .employees__head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2%;
-
-      h1 {
-      }
-      a {
-        text-decoration: none;
-        background-color: $color-p;
-        padding: 10px;
-        border-radius: 10px;
-        color: $white;
-      }
-    }
-
-    .employees__table {
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
-
-header {
-  background-color: $black-1;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
-
-  .logo {
+  .add-employee {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 320px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
     h1 {
       color: $white;
+      font-size: 21px;
       span {
         background-color: $color-p;
-        border-radius: 10px;
         color: $black;
+        border-radius: 10px;
         padding: 5px;
       }
     }
-  }
-
-  nav {
-    ul {
-      list-style: none;
-      li {
-        display: inline-block;
-        color: white;
-        margin: 0 10px;
+    .add-employee__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .add-employee__input {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        width: 100%;
+        label {
+          color: white;
+          margin: 0 0 10px 0;
+        }
+        input {
+          padding: 10px;
+          border: none;
+          outline: none;
+          border-radius: 10px;
+        }
+      }
+      button {
+        margin: 10px 0;
+        padding: 10px 0;
+        width: 50%;
+        background-color: $color-p;
+        border: none;
+        outline: none;
+        font-size: 21px;
+        border-radius: 20px;
       }
     }
   }
@@ -138,6 +131,73 @@ header {
         outline: none;
         font-size: 21px;
         border-radius: 20px;
+      }
+    }
+  }
+}
+.employees-view {
+  height: 90vh;
+  background-color: $black-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .employees {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+
+    .employees__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2%;
+
+      h1 {
+      }
+      a {
+        text-decoration: none;
+        background-color: $color-p;
+        padding: 10px;
+        border-radius: 10px;
+        color: $white;
+      }
+    }
+
+    .employees__table {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+header {
+  background-color: $black-1;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  .logo {
+    h1 {
+      color: $white;
+      span {
+        background-color: $color-p;
+        border-radius: 10px;
+        color: $black;
+        padding: 5px;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        color: white;
+        margin: 0 10px;
       }
     }
   }
