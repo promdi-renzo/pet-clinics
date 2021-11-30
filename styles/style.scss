@@ -11,7 +11,7 @@ $white: #ffffff;
   font-family: Roboto;
 }
 
-.employees-container {
+.employees-view {
   height: 90vh;
   background-color: $black-2;
   display: flex;
@@ -79,7 +79,7 @@ header {
   }
 }
 
-.login-viewer {
+.login-view {
   height: 100vh;
   display: flex;
   justify-content: center;

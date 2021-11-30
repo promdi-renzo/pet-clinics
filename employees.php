@@ -12,7 +12,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM employee");
     <?php
     require('./component/header.php')
     ?>
-    <div class="employees-container">
+    <div class="employees-view">
         <div class="employees">
             <div class="employees__head">
                 <h1>Employees</h1>

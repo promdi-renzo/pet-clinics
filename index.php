@@ -5,7 +5,7 @@
 ?>
 
 <body>
-    <div class="login-viewer">
+    <div class="login-view">
         <div class="login">
             <div class="login__logo">
                 <h1>Lo<span>gin</span></h1>

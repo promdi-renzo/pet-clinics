@@ -6,7 +6,7 @@
   font-family: Roboto;
 }
 
-.employees-container {
+.employees-view {
   height: 90vh;
   background-color: #808080;
   display: -webkit-box;
@@ -20,13 +20,13 @@
           align-items: center;
 }
 
-.employees-container .employees {
+.employees-view .employees {
   height: 90%;
   width: 90%;
   background-color: white;
 }
 
-.employees-container .employees .employees__head {
+.employees-view .employees .employees__head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +39,7 @@
   padding: 2%;
 }
 
-.employees-container .employees .employees__head a {
+.employees-view .employees .employees__head a {
   text-decoration: none;
   background-color: #ffa31a;
   padding: 10px;
@@ -47,7 +47,7 @@
   color: #ffffff;
 }
 
-.employees-container .employees .employees__table {
+.employees-view .employees .employees__table {
   width: 100%;
   text-align: center;
 }
@@ -88,7 +88,7 @@ header nav ul li {
   margin: 0 10px;
 }
 
-.login-viewer {
+.login-view {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,7 +102,7 @@ header nav ul li {
   background-color: #808080;
 }
 
-.login-viewer .login {
+.login-view .login {
   background-color: #1b1b1b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,19 +121,19 @@ header nav ul li {
   border-radius: 10px;
 }
 
-.login-viewer .login .login__logo {
+.login-view .login .login__logo {
   color: #ffffff;
   font-size: 21px;
 }
 
-.login-viewer .login .login__logo span {
+.login-view .login .login__logo span {
   background-color: #ffa31a;
   color: #1b1b1b;
   border-radius: 10px;
   padding: 5px;
 }
 
-.login-viewer .login .login__form {
+.login-view .login .login__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +147,7 @@ header nav ul li {
   width: 100%;
 }
 
-.login-viewer .login .login__form .login__input {
+.login-view .login .login__form .login__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,19 +159,19 @@ header nav ul li {
   width: 100%;
 }
 
-.login-viewer .login .login__form .login__input label {
+.login-view .login .login__form .login__input label {
   color: white;
   margin: 0 0 10px 0;
 }
 
-.login-viewer .login .login__form .login__input input {
+.login-view .login .login__form .login__input input {
   padding: 10px;
   border: none;
   outline: none;
   border-radius: 10px;
 }
 
-.login-viewer .login .login__form button {
+.login-view .login .login__form button {
   margin: 10px 0;
   padding: 10px 0;
   width: 50%;
