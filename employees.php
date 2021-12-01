@@ -3,9 +3,10 @@
 
 <?php
 require('./includes/meta.php');
-include('./includes/db-config.php');
+require('./services/employee-service.php');
+require('./includes/db-config.php');
 
-$result = mysqli_query($mysqli, "SELECT * FROM employee");
+$result = getAllEmployees($mysqli);
 ?>
 
 <body>
@@ -16,7 +17,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM employee");
         <div class="employees">
             <div class="employees__head">
                 <h1>Employees</h1>
-                <a href="#">Add employee</a>
+                <a href="add-employee.php">Add employee</a>
             </div>
             <table class="employees__table">
                 <thead>
@@ -30,10 +31,11 @@ $result = mysqli_query($mysqli, "SELECT * FROM employee");
                     </tr>
                 </thead>
                 <tbody>
+                    <img src="" alt="" srcset="">
                     <?php
                     while ($res = mysqli_fetch_array($result)) {
                         echo "<tr>";
-                        echo "<td>" . $res['picpath'] . "</td>";
+                        echo "<td><img width = '50px' height = '50px' src='" . $res['picpath'] . "'></td>";
                         echo "<td>" . $res['idemployee'] . "</td>";
                         echo "<td>" . $res['fname'] . "</td>";
                         echo "<td>" . $res['lname'] . "</td>";

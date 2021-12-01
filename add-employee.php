@@ -3,7 +3,7 @@
 
 <?php
 require('./includes/meta.php');
-include('./includes/db-config.php');
+require('./includes/db-config.php');
 ?>
 
 <body>
@@ -14,7 +14,7 @@ include('./includes/db-config.php');
     <div class="add-employee-view">
         <div class="add-employee">
             <h1>Add <span>Employee</span></h1>
-            <form action="" class="add-employee__form">
+            <form action="./scripts/addEmployee.php" class="add-employee__form" method="POST" enctype="multipart/form-data">
                 <div class="add-employee__input">
                     <label for="fname">First Name</label>
                     <input type="text" name="fname" id="fname">
@@ -35,7 +35,7 @@ include('./includes/db-config.php');
                     <label for="file">Picture</label>
                     <input type="file" name="file" id="file">
                 </div>
-                <button type="submit">Add Employee</button>
+                <button type="submit" name="Submit">Add Employee</button>
             </form>
         </div>
     </div>
