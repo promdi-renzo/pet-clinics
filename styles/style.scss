@@ -11,6 +11,10 @@ $white: #ffffff;
   font-family: Roboto;
 }
 
+img {
+  border-radius: 5%;
+}
+
 .add-employee-view {
   height: 90vh;
   background-color: $black-2;

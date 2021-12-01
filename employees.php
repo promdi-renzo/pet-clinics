@@ -31,10 +31,11 @@ $result = getAllEmployees($mysqli);
                     </tr>
                 </thead>
                 <tbody>
+                    <img src="" alt="" srcset="">
                     <?php
                     while ($res = mysqli_fetch_array($result)) {
                         echo "<tr>";
-                        echo "<td>" . $res['picpath'] . "</td>";
+                        echo "<td><img width = '50px' height = '50px' src='" . $res['picpath'] . "'></td>";
                         echo "<td>" . $res['idemployee'] . "</td>";
                         echo "<td>" . $res['fname'] . "</td>";
                         echo "<td>" . $res['lname'] . "</td>";

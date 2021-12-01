@@ -6,6 +6,10 @@
   font-family: Roboto;
 }
 
+img {
+  border-radius: 5%;
+}
+
 .add-employee-view {
   height: 90vh;
   background-color: #808080;
