@@ -3,8 +3,10 @@
 
 <?php
 require('./includes/meta.php');
-require('./services/employee-service.php');
+require('./services/customer-service.php');
 require('./includes/db-config.php');
+
+$result = getAllCustomers($mysqli);
 ?>
 
 <body>
@@ -29,6 +31,20 @@ require('./includes/db-config.php');
                         <th>Action</th>
                     </tr>
                 </thead>
+                <?php
+                while ($res = mysqli_fetch_array($result)) {
+                    echo "<tr>";
+                    echo "<td><img width = '50px' height = '50px' src='" . $res['picpath'] . "'></td>";
+                    echo "<td>" . $res['idcustomer'] . "</td>";
+                    echo "<td>" . $res['fname'] . "</td>";
+                    echo "<td>" . $res['lname'] . "</td>";
+                    echo "<td>" . $res['num'] . "</td>";
+                    echo "<td>" . $res['loc'] . "</td>";
+                    echo "<td><a href='edit-employee.php?id='>Edit</a> | <a href='deleteEmployee.php?id='>Delete</a></td>";
+                    // echo "<td><a href='edit-employee.php?id=" . $res['idemployee'] . "'>Edit</a> | <a href='deleteEmployee.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
+                    echo "</tr>";
+                }
+                ?>
                 <tbody>
                 </tbody>
             </table>
