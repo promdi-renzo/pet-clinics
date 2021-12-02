@@ -31,7 +31,6 @@ $result = getAllEmployees($mysqli);
                     </tr>
                 </thead>
                 <tbody>
-                    <img src="" alt="" srcset="">
                     <?php
                     while ($res = mysqli_fetch_array($result)) {
                         echo "<tr>";
