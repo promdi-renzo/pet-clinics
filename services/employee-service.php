@@ -27,7 +27,6 @@ function deleteEmployee($mysqli, $id)
     );
 }
 
-
 function updateEmployee($mysqli, $id,  $fname, $lname, $username)
 {
     return mysqli_query(
