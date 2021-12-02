@@ -19,24 +19,8 @@ require('./includes/meta.php');
         $lname = mysqli_real_escape_string($mysqli, $_POST['lname']);
         $usn = mysqli_real_escape_string($mysqli, $_POST['usn']);
 
-        echo $id;
-        echo $fname;
-        echo $lname;
-        echo $usn;
-
         if (empty($fname) || empty($lname) || empty($usn)) {
-            if (empty($fname)) {
-                echo "<font color='red'>fname field is empty.</font><br/>";
-            }
-
-            if (empty($lname)) {
-                echo "<font color='red'>lname field is empty.</font><br/>";
-            }
-            if (empty($usn)) {
-                echo "<font color='red'>usn field is empty.</font><br/>";
-            }
-
-            echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+            header("Location:employees.php");
         } else {
 
             updateEmployee($mysqli, $id,  $fname, $lname, $usn);

@@ -21,27 +21,7 @@ require('./includes/meta.php');
         $file = $_FILES['file'];
 
         if (empty($fname) || empty($lname) || empty($usn) || empty($psw) || empty($file)) {
-            if (empty($fname)) {
-                echo "<font color='red'>fname field is empty.</font><br/>";
-            }
-
-            if (empty($lname)) {
-                echo "<font color='red'>lname field is empty.</font><br/>";
-            }
-            if (empty($usn)) {
-                echo "<font color='red'>usn field is empty.</font><br/>";
-            }
-
-            if (empty($psw)) {
-                echo "<font color='red'>psw field is empty.</font><br/>";
-            }
-
-            if (empty($file)) {
-                echo "<font color='red'>file field is empty.</font><br/>";
-            }
-            var_dump($file);
-            echo "<h1>" . $name . "</h1>";
-            echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+            header("Location:employees.php");
         } else {
             $target_dir = "./uploads/";
             $target_file = $target_dir . basename($_FILES["file"]["name"]);
