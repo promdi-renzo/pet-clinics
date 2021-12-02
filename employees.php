@@ -40,7 +40,7 @@ $result = getAllEmployees($mysqli);
                         echo "<td>" . $res['fname'] . "</td>";
                         echo "<td>" . $res['lname'] . "</td>";
                         echo "<td>" . $res['username'] . "</td>";
-                        echo '<td><a href="#">Edit</a> <a href="#">Delete</a></td>';
+                        echo "<td><a href='deleteEmployee.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
                         echo "</tr>";
                     }
                     ?>
