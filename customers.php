@@ -40,8 +40,7 @@ $result = getAllCustomers($mysqli);
                     echo "<td>" . $res['lname'] . "</td>";
                     echo "<td>" . $res['num'] . "</td>";
                     echo "<td>" . $res['loc'] . "</td>";
-                    echo "<td><a href='edit-employee.php?id='>Edit</a> | <a href='deleteCustomer.php?id=" . $res['idcustomer'] . "'>Delete</a></td>";
-                    // echo "<td><a href='edit-employee.php?id=" . $res['idemployee'] . "'>Edit</a> | <a href='deleteEmployee.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
+                    echo "<td><a href='edit-customer.php?id=" . $res['idcustomer'] . "'>Edit</a> | <a href='deleteCustomer.php?id=" . $res['idcustomer'] . "'>Delete</a></td>";
                     echo "</tr>";
                 }
                 ?>
