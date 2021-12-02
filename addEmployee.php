@@ -49,9 +49,7 @@ require('./includes/meta.php');
             $path =  htmlspecialchars($target_dir . basename($_FILES["file"]["name"]));
 
             addEmployee($mysqli, $fname, $lname, $path, $usn, $psw);
-            // $result = mysqli_query($mysqli, "INSERT INTO employee(fname,lname, picpath, username, password, employeecol) VALUES('$fname','$lname','$path','$usn','$psw','asdasd')");
-            echo "<font color='green'>Data added successfully.";
-            echo "<br/><a href='index.php'>View Result</a>";
+            header("Location:employees.php");
         }
     }
     ?>
