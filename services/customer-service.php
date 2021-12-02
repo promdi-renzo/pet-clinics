@@ -26,10 +26,10 @@ function deleteCustomer($mysqli, $id)
     );
 }
 
-function updateCustomer($mysqli, $id,  $fname, $lname, $username, $num, $loc)
+function updateCustomer($mysqli, $id,  $fname, $lname, $num, $loc)
 {
     return mysqli_query(
         $mysqli,
-        "UPDATE `customer` SET `fname`='$fname',`lname`='$lname',`username`='$username',`num`='$num',`loc`='$loc' WHERE idcustomer=$id"
+        "UPDATE `customer` SET `fname`='$fname',`lname`='$lname',`num`='$num',`loc`='$loc' WHERE idcustomer=$id"
     );
 }
