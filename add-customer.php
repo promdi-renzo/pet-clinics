@@ -24,12 +24,12 @@ require('./includes/db-config.php');
                     <input type="text" name="lname" id="lname">
                 </div>
                 <div class="add-customer__input">
-                    <label for="usn">Username</label>
-                    <input type="text" name="usn" id="usn">
+                    <label for="num">CP #</label>
+                    <input type="text" name="num" id="num">
                 </div>
                 <div class="add-customer__input">
-                    <label for="psw">Password</label>
-                    <input type="password" name="psw" id="psw">
+                    <label for="loc">Location</label>
+                    <input type="text" name="loc" id="loc">
                 </div>
                 <div class="add-customer__input">
                     <label for="file">Picture</label>
