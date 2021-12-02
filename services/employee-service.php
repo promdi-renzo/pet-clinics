@@ -19,7 +19,6 @@ function addEmployee($mysqli, $fname, $lname, $picpath, $username, $password)
     );
 }
 
-
 function deleteEmployee($mysqli, $id)
 {
     return mysqli_query(
@@ -27,7 +26,6 @@ function deleteEmployee($mysqli, $id)
         "DELETE FROM employee WHERE idemployee=$id"
     );
 }
-
 
 function updateEmployee($mysqli, $id,  $fname, $lname, $username)
 {

@@ -5,6 +5,7 @@
     <nav>
         <ul>
             <li><a href="home.php">Home</a></li>
+            <li><a href="customers.php">Customers</a></li>
             <li><a href="pets.php">Pets</a></li>
             <li><a href="employees.php">Employees</a></li>
             <li><a href="services.php">Services</a></li>
