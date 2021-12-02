@@ -19,7 +19,6 @@ function addEmployee($mysqli, $fname, $lname, $picpath, $username, $password)
     );
 }
 
-
 function deleteEmployee($mysqli, $id)
 {
     return mysqli_query(
