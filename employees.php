@@ -31,7 +31,6 @@ $result = getAllEmployees($mysqli);
                     </tr>
                 </thead>
                 <tbody>
-                    <img src="" alt="" srcset="">
                     <?php
                     while ($res = mysqli_fetch_array($result)) {
                         echo "<tr>";
@@ -40,7 +39,7 @@ $result = getAllEmployees($mysqli);
                         echo "<td>" . $res['fname'] . "</td>";
                         echo "<td>" . $res['lname'] . "</td>";
                         echo "<td>" . $res['username'] . "</td>";
-                        echo '<td><a href="#">Edit</a> <a href="#">Delete</a></td>';
+                        echo "<td><a href='edit-employee.php?id=" . $res['idemployee'] . "'>Edit</a> | <a href='deleteEmployee.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
                         echo "</tr>";
                     }
                     ?>
