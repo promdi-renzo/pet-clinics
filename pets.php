@@ -2,7 +2,11 @@
 <html lang="en">
 
 <?php
-require('./includes/meta.php')
+require('./includes/meta.php');
+require('./services/pet-service.php');
+require('./includes/db-config.php');
+
+$result = getAllPets($mysqli);
 ?>
 
 <body>
@@ -28,18 +32,18 @@ require('./includes/meta.php')
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- <?php
-                            while ($res = mysqli_fetch_array($result)) {
-                                echo "<tr>";
-                                echo "<td><img width = '50px' height = '50px' src='" . $res['picpath'] . "'></td>";
-                                echo "<td>" . $res['idemployee'] . "</td>";
-                                echo "<td>" . $res['fname'] . "</td>";
-                                echo "<td>" . $res['lname'] . "</td>";
-                                echo "<td>" . $res['username'] . "</td>";
-                                echo "<td><a href='edit-employee.php?id=" . $res['idemployee'] . "'>Edit</a> | <a href='deleteEmployee.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
-                                echo "</tr>";
-                            }
-                            ?> -->
+                    <?php
+                    while ($res = mysqli_fetch_array($result)) {
+                        echo "<tr>";
+                        echo "<td><img width = '50px' height = '50px' src='" . $res['picpath'] . "'></td>";
+                        echo "<td>" . $res['idpet'] . "</td>";
+                        echo "<td>" . $res['name'] . "</td>";
+                        echo "<td>" . $res['age'] . "</td>";
+                        echo "<td>" . $res['breed'] . "</td>";
+                        // echo "<td><a href='edit-employee.php?id=" . $res['idemployee'] . "'>Edit</a> | <a href='deleteEmployee.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
+                        echo "</tr>";
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>
