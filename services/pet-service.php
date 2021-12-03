@@ -26,10 +26,10 @@ function deletePet($mysqli, $id)
     );
 }
 
-function updatePet($mysqli, $id, $name, $age, $breed, $idcustomer, $picpath)
+function updatePet($mysqli, $id, $name, $age, $breed, $idcustomer)
 {
     return mysqli_query(
         $mysqli,
-        "UPDATE `pet` SET `name`='$name',`age`='$age',`breed`='$breed',`idcustomer`='$idcustomer',`picpath`='$picpath' WHERE idpet=$id"
+        "UPDATE `pet` SET `name`='$name',`age`='$age',`breed`='$breed',`idcustomer`='$idcustomer'WHERE idpet=$id"
     );
 }
