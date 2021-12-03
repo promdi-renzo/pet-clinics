@@ -1,6 +1,8 @@
 <header>
     <div class="logo">
-        <h1>Pet <span>Clinic</span></h1>
+        <a href="home.php">
+            <h1>Pet <span>Clinic</span></h1>
+        </a>
     </div>
     <nav>
         <ul>
