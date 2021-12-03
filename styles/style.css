@@ -10,6 +10,241 @@ img {
   border-radius: 5%;
 }
 
+.edit-pet-view {
+  height: 90vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-pet-view .edit-pet {
+  background-color: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.edit-pet-view .edit-pet h1 {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.edit-pet-view .edit-pet h1 span {
+  background-color: #ffa31a;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.edit-pet-view .edit-pet .edit-pet__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.edit-pet-view .edit-pet .edit-pet__form .edit-pet__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.edit-pet-view .edit-pet .edit-pet__form .edit-pet__input label {
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.edit-pet-view .edit-pet .edit-pet__form .edit-pet__input input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.edit-pet-view .edit-pet .edit-pet__form button {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 50%;
+  background-color: #ffa31a;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  border-radius: 20px;
+}
+
+.add-pet-view {
+  height: 90vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-pet-view .add-pet {
+  background-color: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.add-pet-view .add-pet h1 {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.add-pet-view .add-pet h1 span {
+  background-color: #ffa31a;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.add-pet-view .add-pet .add-pet__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.add-pet-view .add-pet .add-pet__form .add-pet__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.add-pet-view .add-pet .add-pet__form .add-pet__input label {
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.add-pet-view .add-pet .add-pet__form .add-pet__input input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.add-pet-view .add-pet .add-pet__form button {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 50%;
+  background-color: #ffa31a;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  border-radius: 20px;
+}
+
+.pets-view {
+  height: 90vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pets-view .pets {
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  overflow: scroll;
+}
+
+.pets-view .pets .pets__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.pets-view .pets .pets__head a {
+  text-decoration: none;
+  background-color: #ffa31a;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.pets-view .pets .pets__table {
+  width: 100%;
+  text-align: center;
+}
+
 .edit-customer-view {
   height: 90vh;
   background-color: #808080;
