@@ -40,8 +40,7 @@ $result = getAllPets($mysqli);
                         echo "<td>" . $res['name'] . "</td>";
                         echo "<td>" . $res['age'] . "</td>";
                         echo "<td>" . $res['breed'] . "</td>";
-                        echo "<td><a href='edit-employee.php?id=" . $res['idpet'] . "'>History</a> | <a href='edit-pet.php?id=" . $res['idpet'] . "'>Edit</a> | <a href='deletePet.php?id=" . $res['idpet'] . "'>Delete</a></td>";
-                        // echo "<td><a href='edit-employee.php?id=" . $res['idemployee'] . "'>Edit</a> | <a href='deletePet.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
+                        echo "<td><a href='edit-employee.php?id=" . $res['idpet'] . "'>View</a> | <a href='edit-employee.php?id=" . $res['idpet'] . "'>History</a> | <a href='edit-pet.php?id=" . $res['idpet'] . "'>Edit</a> | <a href='deletePet.php?id=" . $res['idpet'] . "'>Delete</a></td>";
                         echo "</tr>";
                     }
                     ?>
