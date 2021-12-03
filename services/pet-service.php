@@ -14,7 +14,7 @@ function addPet($mysqli, $name, $age, $breed, $idcustomer, $picpath)
 {
     return mysqli_query(
         $mysqli,
-        "INSERT INTO `pet`(`name`, `age`, `breed`, `idcustomer`, `picpath`) VALUES ('$name','$age','$breed','$idcustomer','$picpath')"
+        "INSERT INTO `pet`(`name`, `age`, `breed`, `idcustomer`, `picpath`) VALUES ('$name','$age','$breed',$idcustomer,'$picpath')"
     );
 }
 
