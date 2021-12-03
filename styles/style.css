@@ -10,6 +10,53 @@ img {
   border-radius: 5%;
 }
 
+.services-view {
+  height: 90vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-view .services {
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  overflow: scroll;
+}
+
+.services-view .services .services__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.services-view .services .services__head a {
+  text-decoration: none;
+  background-color: #ffa31a;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.services-view .services .services__table {
+  width: 100%;
+  text-align: center;
+}
+
 .edit-pet-view {
   height: 90vh;
   background-color: #808080;
@@ -824,11 +871,15 @@ header {
   padding: 0 5%;
 }
 
-header .logo h1 {
+header .logo a {
+  text-decoration: none;
+}
+
+header .logo a h1 {
   color: #ffffff;
 }
 
-header .logo h1 span {
+header .logo a h1 span {
   background-color: #ffa31a;
   border-radius: 10px;
   color: #1b1b1b;
