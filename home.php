@@ -2,13 +2,20 @@
 <html lang="en">
 
 <?php
-require('./includes/meta.php')
+session_start();
+require('./includes/meta.php');
+require('./services/auth-service.php');
+
+if (empty($_SESSION['username'])) {
+    redirectUnauthorized();
+}
 ?>
 
 <body>
     <?php
     require('./component/header.php')
     ?>
+
 
 </body>
 
