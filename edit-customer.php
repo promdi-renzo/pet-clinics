@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
+session_start();
 require('./includes/meta.php');
 require('./includes/db-config.php');
 require('./services/customer-service.php');
+
+if (empty($_SESSION['username'])) {
+    redirectUnauthorized();
+}
 
 $id = $_GET['id'];
 

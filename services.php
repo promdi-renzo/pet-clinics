@@ -6,6 +6,7 @@ require('./includes/meta.php');
 require('./services/service-service.php');
 require('./includes/db-config.php');
 
+
 $result = getAllServices($mysqli);
 ?>
 

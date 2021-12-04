@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
 session_start();
-require('./includes/meta.php');
 require('./services/auth-service.php');
+require('./includes/meta.php');
 
 if (empty($_SESSION['username'])) {
     redirectUnauthorized();

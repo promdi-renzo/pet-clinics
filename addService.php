@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
+session_start();
 require('./includes/meta.php');
+if (empty($_SESSION['username'])) {
+    redirectUnauthorized();
+}
 ?>
 
 <body>
