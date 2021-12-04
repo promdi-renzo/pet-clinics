@@ -20,17 +20,17 @@ require('./includes/meta.php');
         $psw = mysqli_real_escape_string($mysqli, $_POST['psw']);
         $file = $_FILES['file'];
 
-        if (empty($fname) || empty($lname) || empty($usn) || empty($psw) || empty($file)) {
-            header("Location:employees.php");
-        } else {
+        if (!(empty($fname) || empty($lname) || empty($usn) || empty($psw) || empty($file))) {
             $target_dir = "./uploads/";
             $target_file = $target_dir . basename($_FILES["file"]["name"]);
             move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
             $path =  htmlspecialchars($target_dir . basename($_FILES["file"]["name"]));
 
-            addEmployee($mysqli, $fname, $lname, $path, $usn, $psw);
-            header("Location:employees.php");
+            $hashed = password_hash($psw, PASSWORD_DEFAULT);
+            addEmployee($mysqli, $fname, $lname, $path, $usn, $hashed);
         }
+
+        header("Location:employees.php");
     }
     ?>
 </body>
