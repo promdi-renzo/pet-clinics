@@ -11,6 +11,11 @@ function getEmployee($mysqli, $id)
     return mysqli_query($mysqli, "SELECT * FROM employee WHERE idemployee=$id");
 }
 
+function getEmployeeByUsername($mysqli, $usn)
+{
+    return mysqli_query($mysqli, "SELECT * FROM employee WHERE username='$usn'");
+}
+
 function addEmployee($mysqli, $fname, $lname, $picpath, $username, $password)
 {
     return mysqli_query(

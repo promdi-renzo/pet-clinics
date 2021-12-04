@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
+session_start();
 require('./includes/meta.php');
 require('./services/pet-service.php');
 require('./includes/db-config.php');
+require('./services/auth-service.php');
+
+if (empty($_SESSION['username'])) {
+    redirectUnauthorized();
+}
 
 $result = getAllPets($mysqli);
 ?>
