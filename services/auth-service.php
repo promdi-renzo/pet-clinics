@@ -6,6 +6,11 @@ function redirectUnauthorized()
     header("Location:index.php");
 }
 
+function redirectAuthorized()
+{
+    header("Location:home.php");
+}
+
 function auth($mysqli, $username, $password)
 {
     $results = getEmployeeByUsername($mysqli, $username);
