@@ -10,9 +10,73 @@ $white: #ffffff;
   margin: 0;
   font-family: Roboto;
 }
-
 img {
   border-radius: 5%;
+}
+.history-view {
+  height: 90vh;
+  background-color: $black-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .history {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    overflow: scroll;
+
+    .history__header {
+      background-color: #ffa31a;
+      height: 20%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .history__header-pic {
+        height: 90%;
+        width: 10%;
+        flex: 1;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .history__header-details {
+        flex: 4;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    .history__body {
+      height: 80%;
+      display: flex;
+      margin: 5em 0;
+      flex-direction: column;
+      align-items: center;
+
+      .history__body-content {
+        width: 95%;
+        margin: 1em 0;
+        box-shadow: 0 0 10px gray;
+        padding: 30px;
+
+        .history__body-content__main {
+          padding: 2%;
+        }
+
+        .history__body-content__date {
+          display: flex;
+          justify-content: flex-end;
+          padding: 1%;
+        }
+      }
+    }
+  }
 }
 .edit-service-view {
   height: 90vh;
