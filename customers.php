@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('./includes/meta.php');
+require('./services/auth-service.php');
 require('./services/customer-service.php');
 require('./includes/db-config.php');
 
