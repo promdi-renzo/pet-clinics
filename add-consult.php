@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
 session_start();
 require('./includes/meta.php');
@@ -25,14 +22,18 @@ $result = getAllPets($mysqli);
             <form action="addConsult.php" class="add-consult__form" method="POST">
                 <div class="add-consult__input">
                     <label for="title">Title</label>
-                    <input type="text" name="title" id="title">
+                    <select name="title" id="title">
+                        <option value="ubo"> Ubo </option>;
+                        <option value="sipon"> Sipon </option>;
+                        <option value="lagnat"> Lagnat </option>;
+                    </select>
                 </div>
                 <div class="add-consult__input">
-                    <label for="content">Content</label>
-                    <input type="text" name="content" id="content">
+                    <label for="comment">Comment</label>
+                    <input type="text" name="comment" id="comment">
                 </div>
                 <div class="add-consult__input">
-                    <label for="pet">Customer</label>
+                    <label for="pet">Pet</label>
                     <select name="pet" id="pet">
                         <?php
                         while ($res = mysqli_fetch_array($result)) {
