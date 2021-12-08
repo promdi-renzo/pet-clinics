@@ -12,9 +12,10 @@ function getPetConsults($mysqli, $id)
 
 function addConsult($mysqli, $title, $comment, $idpet)
 {
-    $date = date_default_timezone_get();
-    return mysqli_query(
-        $mysqli,
-        "INSERT INTO `consult`(`title`, `comment`, `dateCreated`, `idpet`) VALUES ('$title','$comment','$date',$idpet)"
-    );
+    date_default_timezone_set('Asia/Singapore');
+    $date = date('m/d/Y h:i:s a', time());
+
+    $stmt = $mysqli->prepare("INSERT INTO `consult`(`title`, `comment`, `dateCreated`, `idpet`) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("sssi", $title, $comment, $date, $idpet);
+    $stmt->execute();
 }
