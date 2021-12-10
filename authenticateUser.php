@@ -1,7 +1,8 @@
 <?php
-require('./includes/meta.php');
-require('./includes/db-config.php');
-require('./services/auth-service.php');
+session_start();
+require_once('./includes/meta.php');
+require_once('./includes/db-config.php');
+require_once('./services/auth-service.php');
 
 if (empty($_SESSION['username'])) {
     redirectUnauthorized();
@@ -15,7 +16,8 @@ if (empty($_SESSION['username'])) {
         $password = mysqli_real_escape_string($mysqli, $_POST['psw']);
 
         if (auth($mysqli, $username, $password)) {
-            header("Location:employees.php");
+            $_SESSION['cart'] = array();
+            header("Location:index.php");
         } else {
             header("Location:index.php");
         }

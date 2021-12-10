@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
-require('./includes/meta.php');
-require('./services/service-service.php');
-require('./includes/db-config.php');
+session_start();
+require_once('./includes/meta.php');
+require_once('./services/auth-service.php');
+require_once('./services/service-service.php');
+require_once('./includes/db-config.php');
 
+if (empty($_SESSION['username'])) {
+    redirectUnauthorized();
+}
 
 $result = getAllServices($mysqli);
 ?>
@@ -39,7 +41,6 @@ $result = getAllServices($mysqli);
                         echo "<td>" . $res['name'] . "</td>";
                         echo "<td>" . $res['cost'] . "</td>";
                         echo "<td><a href='edit-service.php?id=" . $res['idservice'] . "'>Edit</a> | <a href='deleteService.php?id=" . $res['idservice'] . "'>Delete</a></td>";
-                        // echo "<td><a href='edit-employee.php?id=" . $res['idemployee'] . "'>Edit</a> | <a href='deleteEmployee.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
                         echo "</tr>";
                     }
                     ?>

@@ -10,6 +10,129 @@ img {
   border-radius: 5%;
 }
 
+.transac-view {
+  height: 90vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transac-view .transac {
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.transac-view .transac .container {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transac-view .transac .a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+  overflow: scroll;
+}
+
+.transac-view .transac .a .service {
+  height: 10em;
+  width: 10em;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  background-color: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.transac-view .transac .a .service .pic {
+  width: 90%;
+}
+
+.transac-view .transac .a .service .pic p {
+  background-color: #ffa31a;
+  text-align: center;
+}
+
+.transac-view .transac .a .service a {
+  padding: 0 2em;
+  border: none;
+  background-color: #ffa31a;
+  border-radius: 20px;
+}
+
+.transac-view .transac .b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.transac-view .transac .b .cart-container {
+  height: 90%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.transac-view .transac .b .cart-container .cart-item {
+  width: 90%;
+  height: 5em;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  margin: 1em 0;
+}
+
+.transac-view .transac .b .cart-action {
+  background-color: black;
+  height: 10%;
+  width: 100%;
+}
+
 .add-consult-view {
   height: 90vh;
   background-color: #808080;

@@ -1,10 +1,17 @@
 <?php
 session_start();
-require('./includes/meta.php');
-require('./services/employee-service.php');
-require('./includes/db-config.php');
+require_once('./includes/meta.php');
+require_once('./services/auth-service.php');
+require_once('./services/employee-service.php');
+require_once('./includes/db-config.php');
 
-$result = getAllEmployees($mysqli);
+if (empty($_SESSION['username'])) {
+    redirectUnauthorized();
+}
+$employee = getAllEmployees($mysqli);
+
+
+
 ?>
 
 <body>
@@ -30,7 +37,7 @@ $result = getAllEmployees($mysqli);
                 </thead>
                 <tbody>
                     <?php
-                    while ($res = mysqli_fetch_array($result)) {
+                    while ($res = mysqli_fetch_array($employee)) {
                         echo "<tr>";
                         echo "<td><img width = '50px' height = '50px' src='" . $res['picpath'] . "'></td>";
                         echo "<td>" . $res['idemployee'] . "</td>";

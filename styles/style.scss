@@ -13,6 +13,88 @@ $white: #ffffff;
 img {
   border-radius: 5%;
 }
+
+.transac-view {
+  height: 90vh;
+  background-color: $black-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .transac {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    overflow: scroll;
+    display: flex;
+
+    .container {
+      flex: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .a {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      overflow: scroll;
+
+      .service {
+        height: 10em;
+        width: 10em;
+        box-shadow: 0 0 10px gray;
+        background-color: #1b1b1b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .pic {
+          width: 90%;
+          p {
+            background-color: #ffa31a;
+            text-align: center;
+          }
+        }
+        a {
+          padding: 0 2em;
+          border: none;
+          background-color: #ffa31a;
+          border-radius: 20px;
+        }
+      }
+    }
+    .b {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .cart-container {
+        height: 90%;
+        width: 100%;
+        overflow: scroll;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+
+        .cart-item {
+          width: 90%;
+          height: 5em;
+          box-shadow: 0 0 10px gray;
+          margin: 1em 0;
+        }
+      }
+      .cart-action {
+        background-color: black;
+        height: 10%;
+        width: 100%;
+      }
+    }
+  }
+}
 .add-consult-view {
   height: 90vh;
   background-color: $black-2;
