@@ -3,9 +3,9 @@ session_start();
 require_once('./includes/meta.php');
 require_once('./services/auth-service.php');
 
-if (empty($_SESSION['username'])) {
-    redirectUnauthorized();
-}
+// if (empty($_SESSION['username'])) {
+//     redirectUnauthorized();
+// }
 ?>
 
 <body>
@@ -13,8 +13,8 @@ if (empty($_SESSION['username'])) {
     require('./component/header.php');
     ?>
     <?php
-    require('./includes/db-config.php');
-    require('./services/employee-service.php');
+    require_once('./includes/db-config.php');
+    require_once('./services/employee-service.php');
 
     if (isset($_POST['Submit'])) {
         $fname = mysqli_real_escape_string($mysqli, $_POST['fname']);
