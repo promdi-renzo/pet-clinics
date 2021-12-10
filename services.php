@@ -41,7 +41,6 @@ $result = getAllServices($mysqli);
                         echo "<td>" . $res['name'] . "</td>";
                         echo "<td>" . $res['cost'] . "</td>";
                         echo "<td><a href='edit-service.php?id=" . $res['idservice'] . "'>Edit</a> | <a href='deleteService.php?id=" . $res['idservice'] . "'>Delete</a></td>";
-                        // echo "<td><a href='edit-employee.php?id=" . $res['idemployee'] . "'>Edit</a> | <a href='deleteEmployee.php?id=" . $res['idemployee'] . "'>Delete</a></td>";
                         echo "</tr>";
                     }
                     ?>

@@ -16,7 +16,8 @@ if (empty($_SESSION['username'])) {
         $password = mysqli_real_escape_string($mysqli, $_POST['psw']);
 
         if (auth($mysqli, $username, $password)) {
-            header("Location:employees.php");
+            $_SESSION['cart'] = array();
+            header("Location:index.php");
         } else {
             header("Location:index.php");
         }
