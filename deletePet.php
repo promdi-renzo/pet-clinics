@@ -1,7 +1,8 @@
 <?php
 session_start();
-require('./includes/db-config.php');
-require('./services/pet-service.php');
+require_once('./includes/db-config.php');
+require_once('./services/auth-service.php');
+require_once('./services/pet-service.php');
 
 if (empty($_SESSION['username'])) {
     redirectUnauthorized();

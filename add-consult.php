@@ -1,9 +1,10 @@
 <?php
 session_start();
-require('./includes/meta.php');
-require('./includes/db-config.php');
-require('./services/pet-service.php');
-require('./includes/db-config.php');
+require_once('./includes/meta.php');
+require_once('./includes/db-config.php');
+require_once('./services/pet-service.php');
+require_once('./services/auth-service.php');
+
 if (empty($_SESSION['username'])) {
     redirectUnauthorized();
 }

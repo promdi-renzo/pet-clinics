@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
-require('./includes/meta.php');
-require('./services/service-service.php');
-require('./includes/db-config.php');
+session_start();
+require_once('./includes/meta.php');
+require_once('./services/auth-service.php');
+require_once('./services/service-service.php');
+require_once('./includes/db-config.php');
 
+if (empty($_SESSION['username'])) {
+    redirectUnauthorized();
+}
 
 $result = getAllServices($mysqli);
 ?>

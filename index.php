@@ -1,7 +1,7 @@
 <?php
 session_start();
-require('./includes/meta.php');
-require('./services/auth-service.php');
+require_once('./includes/meta.php');
+require_once('./services/auth-service.php');
 
 if (!empty($_SESSION['username'])) {
     redirectAuthorized();

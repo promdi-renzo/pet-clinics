@@ -1,8 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
-require('./includes/meta.php')
+session_start();
+require_once('./services/auth-service.php');
+require_once('./includes/meta.php');
+
+if (empty($_SESSION['username'])) {
+    redirectUnauthorized();
+}
 ?>
 
 <body>
