@@ -35,7 +35,7 @@ foreach ($tables as $table) {
     $return .= "\n\n\n";
 }
 
-$handle = fopen("backup.sql", "w+");
+$handle = fopen("db.sql", "w+");
 fwrite($handle, $return);
 fclose($handle);
 echo "Successfully backed up";

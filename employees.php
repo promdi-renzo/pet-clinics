@@ -11,7 +11,6 @@ if (empty($_SESSION['username'])) {
 $employee = getAllEmployees($mysqli);
 
 
-
 ?>
 
 <body>

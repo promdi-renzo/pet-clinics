@@ -1,6 +1,6 @@
 <?php
 require_once('./includes/db-config.php');
-$filename = 'backup.sql';
+$filename = 'db.sql';
 $handle = fopen($filename, "r+");
 $contents = fread($handle, filesize($filename));
 $sql = explode(';', $contents);

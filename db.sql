@@ -10,8 +10,9 @@ CREATE TABLE `consult` (
   PRIMARY KEY (`idhistory`),
   KEY `fk_history_pet1_idx` (`idpet`),
   CONSTRAINT `fk_history_pet1` FOREIGN KEY (`idpet`) REFERENCES `pet` (`idpet`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
+INSERT INTO consult VALUES("1","ubo","asd","12/14/2021 01:57:04 pm","1","0");
 
 
 
@@ -27,7 +28,7 @@ CREATE TABLE `customer` (
   PRIMARY KEY (`idcustomer`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
-INSERT INTO customer VALUES("1","asd","asd","asd","./uploads/","asd");
+INSERT INTO customer VALUES("1","asd","asd","asd","./uploads/","sd");
 
 
 
@@ -43,7 +44,7 @@ CREATE TABLE `employee` (
   PRIMARY KEY (`idemployee`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
-INSERT INTO employee VALUES("1","asd","asd","./uploads/","asd","$2y$10$wQazgIaIPv6XOUV2OkjZv.00X4hfLQV3tDHxK0OB3qwC.j1vljBU2");
+INSERT INTO employee VALUES("1","asd","asd","./uploads/","asd","$2y$10$n2qSXSzlxBjFjkDL4OcM9uUGgGLJ8EhDqfSpYFw.wNwO6S3yOYJ96");
 
 
 
@@ -59,10 +60,9 @@ CREATE TABLE `pet` (
   PRIMARY KEY (`idpet`,`idcustomer`),
   KEY `fk_pet_customer_idx` (`idcustomer`),
   CONSTRAINT `fk_pet_customer` FOREIGN KEY (`idcustomer`) REFERENCES `customer` (`idcustomer`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 INSERT INTO pet VALUES("1","asd","asd","asd","1","./uploads/");
-INSERT INTO pet VALUES("2","qwd","qwd","qwd","1","./uploads/");
 
 
 
@@ -74,10 +74,8 @@ CREATE TABLE `service` (
   `cost` varchar(45) NOT NULL,
   `picpath` varchar(45) NOT NULL,
   PRIMARY KEY (`idservice`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO service VALUES("1","asd","asd","./uploads/");
-INSERT INTO service VALUES("2","dsa","dsa","./uploads/");
 
 
 
