@@ -15,6 +15,8 @@
             <li><a href="services.php">Services</a></li>
             <li><a href="add-consult.php">Consult</a></li>
             <li><a href="transactions.php">Transactions</a></li>
+            <li><a href="export.php">Export</a></li>
+            <li><a href="import.php">Import</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
 
